@@ -9,7 +9,7 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 
 document.querySelector('#root').innerHTML = render(
-  <div className="page">
+  <div id="home" className="page">
     <Header />
     <main>
       <Banner />
@@ -20,3 +20,11 @@ document.querySelector('#root').innerHTML = render(
     <Footer />
   </div>,
 );
+const navigationElement = document.querySelector('.rollout-nav');
+const menuButton = document.querySelector('.nav-btn');
+menuButton.addEventListener('click', () => {
+  navigationElement.classList.toggle('nav-closed');
+});
+navigationElement.addEventListener('click', () => {
+  navigationElement.classList.toggle('nav-closed');
+});
