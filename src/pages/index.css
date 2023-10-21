@@ -82,6 +82,7 @@ nav a:hover {
 
   .rollout-nav a {
     display: inline-block;
+    z-index: 20;
 
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -330,4 +331,10 @@ footer {
 .contact__map {
   width: 100%;
   height: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
