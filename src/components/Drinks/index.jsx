@@ -1,5 +1,6 @@
 import './../../pages/index.css';
 import { Layer } from '../Layer';
+
 export const Drink = (props) => {
   const { id, name, ordered, image, layers } = props;
   console.log('objednáno', ordered, name);
